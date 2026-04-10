@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/nav_style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Periodic Table</h1>
+    </header>
+    <nav>
+        <ul>
+            <li id="mobileMenuButton">=</li>
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="../pages/mole_converter.html">Mole Converter</a>
+            </li>
+            <li>
+                <a href="../pages/periodic_table_history.html">Periodic Table History</a>
+            </li>
+            <li>
+                <a href="../pages/element_particle_count_getter.html">Element Particle Count Getter</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1 class="title">Element Particle Count Getter</h1>
+            <div class="converter">
+                <div class="form">
+                    <fieldset>
+                        <label for="elementSelector">Element</label>
+                        <select id="elementSelector">
+                            <option disabled>Pick Any of the 118 Elements</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Output</legend>
+                        <label for="protons">Protons</label>
+                        <input id="protons" readonly>
+                        <label for="electrons">Electrons</label>
+                        <input id="electrons" readonly>
+                        <label for="neutrons">Neutrons</label>
+                        <input id="neutrons" readonly>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+        <aside>
+
+        </aside>
+    </main>
+    <script src="../js/mobileMenu.js"></script>
+    <script src="../js/calculate_particle_count.js"></script>
+    <script src="../js/getData.js"></script>
+</body>
+
+</html>

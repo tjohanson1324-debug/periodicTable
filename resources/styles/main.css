@@ -1,0 +1,91 @@
+header {
+    background-color: lightblue;
+    padding: 1em;
+}
+
+.title {
+    text-align: center;
+}
+
+body {
+    max-width: 100%;
+}
+
+.form {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form fieldset {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5em;
+}
+
+.form fieldset legend
+{
+     font-size: 2em;
+    text-align: center;
+}
+
+.form select,
+.form input,
+.form label {
+    padding: 1em;
+}
+
+#output {
+    padding: 1em;
+}
+
+.paragraph-container {
+    display: grid;
+    align-items: baseline;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+    margin: auto;
+}
+
+.errorMessage
+{
+    color:red;
+    display: none;
+}
+
+.paragraph-container p {
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+    text-align: justify;
+    text-indent: 2em;
+    max-width: 60ch;
+}
+
+.paragraph-container .section {
+    justify-self: center;
+    margin: 1em;
+}
+
+@media(max-width:676px) {
+    .form fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form {
+        width: 100%;
+        margin: 0;
+    }
+
+    .paragraph-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        max-width: 96%;
+    }
+    .paragraph-container .section
+    {
+        margin: 0;
+    }
+}

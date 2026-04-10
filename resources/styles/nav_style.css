@@ -1,0 +1,42 @@
+nav ul {
+    list-style-type: none;
+    background-color: rgb(26, 100, 124);
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: white
+}
+
+nav ul li {
+    padding: 2em;
+    flex: 1 1 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul li#mobileMenuButton {
+    display: none;
+}
+
+@media(max-width:676px) {
+    nav ul li#mobileMenuButton {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hidden {
+        display: none;
+    }
+}

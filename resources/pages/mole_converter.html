@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/nav_style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Periodic Table</h1>
+    </header>
+    <nav>
+        <ul>
+            <li id="mobileMenuButton">=</li>
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="../pages/mole_converter.html">Mole Converter</a>
+            </li>
+            <li>
+                <a href="../pages/periodic_table_history.html">Periodic Table History</a>
+            </li>
+            <li>
+                <a href="../pages/element_particle_count_getter.html">Element Particle Count Getter</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1 class="title">Mole Converter</h1>
+            <div class="converter">
+                <div class="form">
+                    <fieldset>
+                        <label for="elementSelector">Element</label>
+                        <select id="elementSelector">
+                            <option disabled>Pick Any of the 118 Elements</option>
+                        </select>
+                        <label for="value">Amount</label>
+                        <input id="value">
+                        <label for="fromUnit">Convert from</label>
+                        <select id="fromUnit">
+                            <option value="moles">moles</option>
+                            <option value="atoms">atoms</option>
+                        </select>
+                        <label for="toUnit">Convert to</label>
+                        <select id="toUnit">
+                            <option value="moles">moles</option>
+                            <option value="atoms">atoms</option>
+                        </select>
+                        <p class="errorMessage">Type a valid number for amount.</p>
+                    </fieldset>
+                    <label for="output">Output</label>
+                    <input id="output" readonly>
+                </div>
+            </div>
+        </section>
+        <aside>
+
+        </aside>
+    </main>
+    <script src="../js/mobileMenu.js"></script>
+    <script src="../js/mole_converter.js"></script>
+    <script src="../js/getData.js"></script>
+</body>
+
+</html>
