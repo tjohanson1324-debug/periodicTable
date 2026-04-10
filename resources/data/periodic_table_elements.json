@@ -5503,7 +5503,8 @@
             "unknown_properties": true,
             "physical_properties": {
                 "melting_point": 450,
-                "boiling_point": 610
+                "boiling_point": 610,
+                "density":7.2
             },
             "atomic_properties": {
                 "atomic_mass": 294,
