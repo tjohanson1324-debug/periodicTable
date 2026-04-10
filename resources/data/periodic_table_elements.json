@@ -581,6 +581,7 @@
             },
             "atomic_properties": {
                 "atomic_mass": 28.086,
+                "electronegativity":1.9,
                 "oxidation_states": [
                     3,
                     2,
