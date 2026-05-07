@@ -25,6 +25,7 @@ nav {
 
 ul li#mobileMenuButton {
     display: none;
+    color: white;
 }
 
 @media(max-width:676px) {
