@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     getElement("#periodicTable").addEventListener('click', getElementData)
     getElement("#periodicTable").addEventListener('focus', getElementData)
@@ -159,13 +160,12 @@ const elementProperties =
         return element.properties.atomic_properties.electron_config
     },
 
-
     createElements: function () {
+        let data = getData("../resources/data/periodic_table_elements.json")
+        console.log(data)
         if (this.elements.length < 1) {
-            const data = getData("../resources/data/periodic_table_elements.json")
             for (let i = 0; i < data.length; i++) {
                 let elementInfo = data[i]
-
                 let periodicTableElement = new this.PeriodicTableElement(elementInfo.name, elementInfo.symbol, (i + 1),
                     elementInfo.properties, elementInfo.description)
                 this.elements.push(periodicTableElement)

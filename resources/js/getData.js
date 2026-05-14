@@ -1,19 +1,20 @@
 async function fetchFile(url) {
-    const file = fetch(url)
-    file.then(response => response.json())
-        .then(data => {
-            let stringifyiedData = JSON.stringify(data)
-            localStorage.setItem(url, stringifyiedData)
-        })
-        .catch(error => {
-            console.log(error)
-        })
+    try
+    {
+    const file = await fetch(url)
+    const json = await file.json()
+    localStorage.setItem(url,JSON.stringify(json))
+    }
+    catch (error)
+    {
+        console.error(error)
+    }
 }
 localStorage.clear()
 function getData(url) {
     let data = null
     if (!localStorage.getItem(url)) {
-         fetchFile(url)
+        fetchFile(url)
         data = localStorage.getItem(url)
         data = JSON.parse(data)
     }
