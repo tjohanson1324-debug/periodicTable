@@ -1,6 +1,8 @@
 header {
-    background-color: lightblue;
+    background-image: url(../Images/vedrana-filipovic-jxqTaXF5WmY-unsplash.jpg);
+    background-size: cover;
     padding: 1em;
+    color: white;
 }
 
 .title {
@@ -75,6 +77,11 @@ iframe
   aspect-ratio: 16/9;
 }
 
+img
+{
+width: 100%;
+}
+
 @media(max-width:676px) {
     .form fieldset {
         display: flex;
@@ -96,4 +103,10 @@ iframe
     {
         margin: 0;
     }
+}
+footer
+{
+    position: relative;
+    height: 10%;
+    bottom: 0%;
 }
